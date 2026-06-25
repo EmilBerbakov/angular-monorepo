@@ -139,3 +139,12 @@ And there you have it! mobile-app is now both an Android and IOS app, located in
 
 You can then look at [Testing your Capacitor App](https://capacitorjs.com/docs/basics/workflow#testing-your-capacitor-app), [Open in your native ide](https://capacitorjs.com/docs/basics/workflow#open-your-native-ide), and [Compiling your native binary](https://capacitorjs.com/docs/basics/workflow#compiling-your-native-binary) for more info on what you can do with the Android and IOS builds.
 
+
+## Screenshots of the example projects:
+
+### desktop-app:
+![desktop app](image.png)
+
+### mobile-app (emulated on Pixel 7 dimensions):
+![mobile app](image-2.png)
+
