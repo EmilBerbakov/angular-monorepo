@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExampleLibrary } from './example-library';
+import { MobileComponent } from './mobile-component';
 
-describe('ExampleLibrary', () => {
-  let component: ExampleLibrary;
-  let fixture: ComponentFixture<ExampleLibrary>;
+describe('MobileComponent', () => {
+  let component: MobileComponent;
+  let fixture: ComponentFixture<MobileComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ExampleLibrary],
+      imports: [MobileComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ExampleLibrary);
+    fixture = TestBed.createComponent(MobileComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

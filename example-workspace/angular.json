@@ -30,7 +30,7 @@
                 "input": "projects/desktop-app/public"
               }
             ],
-            "styles": ["projects/example-library/src/lib/shared/styles/styles.scss"]
+            "styles": ["projects/example-library/src/lib/styles/styles.scss"]
           },
           "configurations": {
             "production": {
@@ -96,7 +96,7 @@
                 "input": "projects/mobile-app/public"
               }
             ],
-            "styles": ["projects/mobile-app/src/styles.scss"]
+            "styles": ["projects/example-library/src/lib/styles/styles.scss"]
           },
           "configurations": {
             "production": {

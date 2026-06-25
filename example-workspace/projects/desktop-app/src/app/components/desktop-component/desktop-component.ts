@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
-import { SharedCardComponent } from 'example-library';
+import { Component, inject } from '@angular/core';
+import { SharedCardComponent, SharedService } from 'example-library';
+import {MatTableModule} from '@angular/material/table';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-desktop-component',
-  imports: [SharedCardComponent],
+  imports: [SharedCardComponent, MatTableModule, AsyncPipe],
   templateUrl: './desktop-component.html',
   styleUrl: './desktop-component.scss',
 })
-export class DesktopComponent {}
+export class DesktopComponent {
+  sharedService = inject(SharedService);
+  constructor() {
+    this.sharedService.getUsers();
+  }
+}

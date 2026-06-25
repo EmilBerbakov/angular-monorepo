@@ -1,0 +1,23 @@
+@let data = sharedService.users$ | async;
+<lib-shared-card-component
+    title="Welcome to the Mobile App!"
+    subtitle="This is the mobile app's subtitle"
+    appearance="outlined"
+>
+<mat-accordion body>
+    @for (user of data; track user.id) {
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{user.id}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{user.name}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>Website: {{user.website}}</p>
+    <p>Email: {{user.email}}</p>
+  </mat-expansion-panel>
+    }
+</mat-accordion>
+</lib-shared-card-component>
