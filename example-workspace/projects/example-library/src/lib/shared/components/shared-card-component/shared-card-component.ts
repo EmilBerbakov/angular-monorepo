@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
-import {MatCardModule} from '@angular/material/card';
+import { Component, input } from '@angular/core';
+import {MatCardAppearance, MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'lib-shared-card-component',
-  imports: [],
+  imports: [MatCardModule],
   templateUrl: './shared-card-component.html',
   styleUrl: './shared-card-component.css',
 })
