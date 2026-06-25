@@ -6,11 +6,11 @@ ng new example-workspace --no-create-application
 ```
 2. create desktop application
 ```
-ng g application desktop-application
+ng g application desktop-app
 ```
 3. create mobile application
 ```
-ng g application mobile-application
+ng g application mobile-app
 ```
 
 4. add capacitor:
